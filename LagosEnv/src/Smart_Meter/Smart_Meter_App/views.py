@@ -4,7 +4,7 @@ import datetime
 
 # Create your views here.
 
-# These view is to test that everything has been condigured appropriately
+# These view is to test that everything has been configured appropriately
 
 
 def index(request):
