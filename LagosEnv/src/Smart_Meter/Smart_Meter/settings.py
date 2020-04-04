@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Smart_Meter'
+    'Smart_Meter_App',
+    'Stakeholder_Dashboard'
 ]
 
 MIDDLEWARE = [
