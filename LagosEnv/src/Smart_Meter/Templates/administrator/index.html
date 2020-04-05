@@ -1,4 +1,26 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Welcome to the administrative block</h1>
+<div class="section_1">
+    <div class="navigation">
+        <ul>
+            <li>Billing</li>
+            <li>Pricing</li>
+            <li>Meter</li>
+            <li>Subscribe</li>
+            <li>Pay</li>
+        </ul>
+    </div>
+    <div class="main">
+        <h4>Welcome.<br>
+            Kindly Login with Your ID</h4>
+        <form>
+            <label for="text">stakeholder ID</label><br>
+            <input type="text" name="id" id="user_id"><br>
+            <button type="submit">LOGIN</button>
+        </form>
+    </div>
+</div>
+<div>
+    {{ context }}
+</div>
 {% endblock %}
