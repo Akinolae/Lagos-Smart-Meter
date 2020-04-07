@@ -35,13 +35,13 @@ button:active {
     transform: scale(1.1);
 }
 
-.navigation>ul {
-    width: 100%;
-    margin: 25% auto;
+i {
+    padding-right: 10px;
 }
 
-.main {
-    display: flex;
+.navigation>ul {
+    width: 80%;
+    margin-top: 25%;
 }
 
 .main h3 {
@@ -49,6 +49,10 @@ button:active {
     margin: 30px auto;
     color: rgba(0, 0, 0, 0.644);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
 }
 
 .add_subsccriber {

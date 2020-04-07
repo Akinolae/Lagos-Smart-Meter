@@ -7,13 +7,49 @@
         <ul>
             <li><i class="far fa-user-circle"></i>Subscribers</li>
             <li><i class="fas fa-credit-card"></i>Billings</li>
-            <li>Allocate Device</li>
-            <li>Notification</li>
+            <li><i class="fas fa-tachometer-alt"></i>Allocate Device</li>
+            <li><i class="far fa-bell"></i>Notification</li>
         </ul>
     </div>
     <div class="main">
-        <h3>SUBSCRIBERS INFORMATION</h3>
-        <button class="add_subsccriber" onclick="alert('hello')">Add Subscriber</button>
+        <div class="header">
+            <h3>SUBSCRIBERS INFORMATION</h3>
+            <button class="add_subsccriber"><i class="fas fa-plus"></i>Add Subscriber</button>
+
+        </div>
+        <div class="user_table">
+            <table class="table">
+                <caption>List of users</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">SUBSCRIBER</th>
+                        <th scope="col">METER ID</th>
+                        <th scope="col">SUBSCRIPTION TYPE</th>
+                        <th scope="col">STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Tayo Olakunke</th>
+                        <td>1233434AD</td>
+                        <td>PERSONAL</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 {% endblock %}
