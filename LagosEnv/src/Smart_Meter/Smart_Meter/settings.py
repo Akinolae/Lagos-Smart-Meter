@@ -10,7 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+from django.contrib.messages import constants as messages
 import os
+import cloudinary
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
     'Smart_Meter_App',
     'Stakeholder_Dashboard',
     'administrator',
+    'cloudinary'
 
 ]
 
@@ -87,6 +90,12 @@ WSGI_APPLICATION = 'Smart_Meter.wsgi.application'
 #         'HOST': 'localhost'
 #     }
 # }
+cloudinary.config(
+    cloud_name='dpp3dboak',
+    api_key=469354443678174,
+    api_secret='yKwX4JnMJqZd1g_ODJTxhKzHqTw',
+    secure=True
+)
 
 
 # Password validation
@@ -128,8 +137,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-from django.contrib.messages import constants as messages
-
 MESSAGE_TAGS = {
-    messages.ERROR:'danger'
+    messages.ERROR: 'danger'
 }

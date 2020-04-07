@@ -9,11 +9,9 @@ from Subscriber_Dashboard.views import subscriber_page
 
 
 urlpatterns = [
-    path('', index, name='index'),
-    # path('stakeholder_Dashboard/', stakeholder, name='stakeholder'),
-    # path('admin_Dashboard/', admin_page, name='administrator'),
+    path('', administrator_index, name='adminIndex'),
     path('subscriber/', subscriber_page, name='subscriber'),
-    path('administrator/', administrator_index, name='adminIndex'),
+    # path('administrator/', administrator_index, name='adminIndex'),
     path('administrator/about', about, name='admin about'),
     path('administrator/login', login, name='login'),
     path('administrator/logout', logout, name='logout'),
