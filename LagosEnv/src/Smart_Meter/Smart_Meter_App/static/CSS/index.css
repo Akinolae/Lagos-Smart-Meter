@@ -39,6 +39,22 @@ i {
     padding-right: 10px;
 }
 
+.navigation>ul>a {
+    text-decoration: none;
+    font-family: sans-serif;
+    line-height: 3.5rem;
+    padding: 25px;
+    height: 25px;
+    transition: all ease 0.3s;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.navigation>ul>a:hover {
+    background: #0000000e;
+}
+
 .navigation>ul {
     width: 100%;
     margin-top: 25%;
