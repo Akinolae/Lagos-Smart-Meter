@@ -3,21 +3,50 @@
 <div class="section_1">
     <div class="navigation">
         <ul>
-            <li>Billing</li>
-            <li>Pricing</li>
-            <li>Meter</li>
-            <li>Subscribe</li>
-            <li>Pay</li>
+            <li><i class="fas fa-money-bill"></i>Billing</li>
+            <li><i class="fas fa-dollar-sign"></i>Pricing</li>
+            <li><i class="fas fa-tachometer-alt"></i>Meter</li>
+            <li><i class="fas fa-money-check-alt"></i>Subscribe</li>
+            <li><i class="fab fa-cc-visa"></i>Pay</li>
         </ul>
     </div>
     <div class="main">
-        <h4>Welcome.<br>
-            Kindly Login with Your ID</h4>
-        <form>
-            <label for="text">stakeholder ID</label><br>
-            <input type="text" name="id" id="user_id"><br>
-            <button type="submit">LOGIN</button>
-        </form>
+        <h4 class="text-center pt-4">Welcome. <br>
+            Kindly login</h4>
+        <section id="login" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class="card">
+                            <div class="card-header text-white"
+                                style="background: linear-gradient(122.66deg, #ffa448 0.61%, #ff8488 100.86%);">
+                                <h4>
+                                    <i class="fas fa-sign-in-alt"></i> Login</h4>
+                            </div>
+                            <div class="card-body">
+                                {% include 'partials/_alert.html'%}
+                                <form action="{% url 'login'%}" method="POST">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+                                        <input type="text" name="username" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password2">Password</label>
+                                        <input type="password" name="password" class="form-control" required>
+                                    </div>
+
+                                    <input type="submit" value="Login" class="btn btn-block"
+                                        style="background: linear-gradient(122.66deg, #ffa448 0.61%, #ff8488 100.86%); color:#ffff ;">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h4 class="text-center">you don't have an account? register <a href="{% url 'register' %}">here</a> </h4>
     </div>
 </div>
 <div>

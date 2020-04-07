@@ -4,6 +4,9 @@ from django.contrib.auth.models import User
 # Create your views here.
 
 
+def administrator_index(request):
+    return render(request, 'administrator/index.html', {})
+
 
 def register(request):
     if request.method == 'POST':
@@ -53,10 +56,10 @@ def login(request):
             return redirect('dashboard')
         else:
             messages.error(request, "Incorrect username or password")
-            return redirect('login')
+            return redirect('adminIndex')
 
     else:
-        return render(request, 'administrator/login.html')
+        return render(request, 'administrator/index.html')
 
 
 def logout(request):
